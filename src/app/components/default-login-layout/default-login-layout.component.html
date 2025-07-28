@@ -1,18 +1,23 @@
 <main>
-  <section>
-    <img
+  <section class="login-section">
+    <img 
       src="assets/svg/logo.svg"
       alt="Logo"
       class="logo"
     />
-    <h2>Welcome to the Default Login Layout</h2>
-    <button>Login</button>
-    <div>
-        <span>or</span>
+    <h2>{{ title }}</h2>
+    <ng-content></ng-content>
+    <div class="btn-wrapper">
+        <button class="btn-primary">{{ primaryBtnText }}</button>
+        <div class="divider">
+            <div></div>
+            <span>or</span>
+            <div></div>
+        </div>
+        <button class="btn-secondary">{{ secondaryBtnText }}</button>
     </div>
-    <button>Register</button>
   </section>
-  <section>
+  <section class="main-section">
     <h1>You should, MoveIt!</h1>
     <img src="assets/svg/main-illustration.svg" alt="MoveIt!"/>
   </section>
