@@ -3,7 +3,24 @@
     primaryBtnText="Login Now"
     secondaryBtnText="Signup Now"
 >
-    <form>
-        <p>oiiiiie</p>
+    <form [formGroup]="loginForm" >
+        <app-primary-input 
+            type="email" 
+            inputName="email" 
+            placeholder="john.doe@example.com"
+            label="Email"
+            formControlName="email"
+        >
+            <img src="../../../assets/svg/email-icon.svg"/>
+        </app-primary-input>
+        <app-primary-input 
+            type="password" 
+            inputName="password"
+            label="Password"
+            formControlName="password"
+        >
+            <img src="../../../assets/svg/password-icon.svg"/>
+        </app-primary-input>
+        <span class="forgot-password">Forgot Password?</span>
     </form>
 </app-default-login-layout>
